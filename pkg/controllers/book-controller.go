@@ -39,4 +39,6 @@ func CreateBook(w http.ResponseWriter, r *http.Request) {
 	utils.PareseBody(r, CreateBook)
 	b := CreateBook.CreateBook()
 	res, _ := json.Marshal(b)
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
 }
