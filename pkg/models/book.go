@@ -15,7 +15,7 @@ type Book struct {
 }
 
 
-
+// TODO: fix errors
 func init() {
 	config.Connect()
 	db = config.GetDB()
