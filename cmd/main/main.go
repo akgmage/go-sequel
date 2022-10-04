@@ -9,6 +9,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
+// TODO: fix errors
 func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)
